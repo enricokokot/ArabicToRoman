@@ -1,0 +1,14 @@
+{
+  "name": "arabictoroman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "arabicToRoman.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.4.5"
+  }
+}
