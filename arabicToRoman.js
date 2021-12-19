@@ -1,3 +1,5 @@
-function arabicToRoman() {}
+function arabicToRoman() {
+  return "I";
+}
 
 module.exports = { arabicToRoman };
