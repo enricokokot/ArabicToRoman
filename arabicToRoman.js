@@ -1,9 +1,6 @@
 function arabicToRoman(arabicNumber) {
-  if (arabicNumber == 1) return "I";
-  if (arabicNumber == 2) return "II";
-  if (arabicNumber == 3) return "III";
-  if (arabicNumber == 4) return "IV";
-  if (arabicNumber == 5) return "V";
+  const romanNumerals = { 1: "I", 2: "II", 3: "III", 4: "IV", 5: "V" };
+  return romanNumerals[arabicNumber];
 }
 
 module.exports = { arabicToRoman };
