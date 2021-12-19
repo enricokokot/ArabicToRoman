@@ -24,4 +24,24 @@ describe("Arabic to Roman", () => {
   it('Should return "V" when given 5', () => {
     expect(arabicToRoman(5)).toBe("V");
   });
+
+  it('Should return "VI" when given 6', () => {
+    expect(arabicToRoman(6)).toBe("VI");
+  });
+
+  it('Should return "VII" when given 7', () => {
+    expect(arabicToRoman(7)).toBe("VII");
+  });
+
+  it('Should return "VIII" when given 8', () => {
+    expect(arabicToRoman(8)).toBe("VIII");
+  });
+
+  it('Should return "IX" when given 9', () => {
+    expect(arabicToRoman(9)).toBe("IX");
+  });
+
+  it('Should return "X" when given 10', () => {
+    expect(arabicToRoman(10)).toBe("X");
+  });
 });
