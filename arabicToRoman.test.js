@@ -45,3 +45,25 @@ describe("Arabic to Roman", () => {
     expect(arabicToRoman(10)).toBe("X");
   });
 });
+
+describe("Arabic to Roman 2", () => {
+  it('Should return "XV" when given 15', () => {
+    expect(arabicToRoman(15)).toBe("XV");
+  });
+
+  it('Should return "XXVIII" when given 28', () => {
+    expect(arabicToRoman(28)).toBe("XXVIII");
+  });
+
+  it('Should return "XXXIX" when given 39', () => {
+    expect(arabicToRoman(39)).toBe("XXXIX");
+  });
+
+  it('Should return "CDXCIX" when given 499', () => {
+    expect(arabicToRoman(499)).toBe("CDXCIX");
+  });
+
+  it('Should return "MDCCCLXXXVIII" when given 1888', () => {
+    expect(arabicToRoman(1888)).toBe("MDCCCLXXXVIII");
+  });
+});
