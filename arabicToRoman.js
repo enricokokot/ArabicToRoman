@@ -16,17 +16,17 @@ function arabicToRoman(arabicNumber) {
     0: "",
   };
 
-  answer = "";
+  romanNumber = "";
 
   while (arabicNumber > 0) {
-    goodNumber = Object.keys(romanNumerals)
+    currentGreatestDivisor = Object.keys(romanNumerals)
       .reverse()
-      .find((numero) => arabicNumber / numero >= 1);
-    arabicNumber -= goodNumber;
-    answer += romanNumerals[goodNumber];
+      .find((divisor) => arabicNumber / divisor >= 1);
+    arabicNumber -= currentGreatestDivisor;
+    romanNumber += romanNumerals[currentGreatestDivisor];
   }
 
-  return answer;
+  return romanNumber;
 }
 
 module.exports = { arabicToRoman };
